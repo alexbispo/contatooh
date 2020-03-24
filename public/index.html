@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatooh</title>
 </head>
-<body ng-controller="ContatosController">
-  <h1>Bem vindo ao Contatooh</h1>
-
-  <button ng-click="increment()">Novo</button>
-  <p>Contatos Cadastrados: {{total}}</p>
-
+<body>
+  <div ng-view></div>
   <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-route/angular-route.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/controllers/ContatosController.js"></script>
+  <script src="js/controllers/ContactsCtrl.js"></script>
+  <script src="js/controllers/ContactCtrl.js"></script>
+  <script src="js/controllers/NotFoundCtrl.js"></script>
 </body>
 </html>
